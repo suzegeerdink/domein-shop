@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /*////////////////////////////////////////////////////////////////////////
 Table of Contents:
     1. Global Styles
@@ -11,18 +13,25 @@ Table of Contents:
 ////////////////////////////////////////////////////////////////////////*/
 
 
-
 /*////////////////////////
-    1. Global Styles
+    1. Global Styles, COLOR = grijs #899CA0 en donkergroen #1C2B32
 ////////////////////////*/
 
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 1000px;
+}
 
 
 /*////////////////////////
     2. Typography
 ////////////////////////*/
 
-
+body {
+    font-family: 'Poppins', sans-serif;
+}
 
 /*////////////////////////
     3. Areas
@@ -33,17 +42,188 @@ Table of Contents:
 /*///////////// 3.1 Header /////////////*/
 
 
+.header-container {
+    max-width: 1000px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 200px;
+    background-image: url("/assets/images/mountains.jpg");
+    background-size: 1300px;
+    background-position: 55% 45%;
 
+}
+
+h1 {
+    font-size: 50px;
+    color: #1C2B32;
+}
+
+p {
+    font-size: 12px;
+    color: #1C2B32;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+
+.domein-field {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-color: #1C2B32;
+    border-style: solid;
+    background: none;
+    width: 250px;
+    height: 50px;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+}
+
+.domein-field:focus {
+    padding-left: 15px;
+    font-size: 12px;
+    outline: none;
+}
+
+.domein-field::placeholder {
+    color: #1C2B32;
+    padding-left: 15px;
+    font-size: 12px;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+.check-button {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: #1C2B32;
+    border-color: #1C2B32;
+    border-style: solid;
+    width: 180px;
+    height: 50px;
+    margin-left: -5px;
+    margin-top: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    color: white;
+}
 /*///////////// 3.2 Testimonial /////////////*/
+h3 {
+    text-align: center;
+    padding: 30px;
+    color: #1C2B32;
+}
 
+.clients {
+    margin-left: 100px;
+    margin-right: 100px;
+}
 
+.quote {
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 20px;
+}
 
+.client-one {
+    padding: 25px 80px;
+    border-radius: 5px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.client-one > .image-jane > img {
+    width: 44px;
+    height: 44px;
+    margin-right: 15px;
+}
+
+.image-jane, .image-john {
+    display : inline-flex;
+    vertical-align: middle;
+}
+.quote-two {
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+.client-two > .image-john > img {
+    width: 44px;
+    height: 44px;
+    margin-right: 15px;
+}
+
+.client-two {
+    margin-top: 20px;
+    padding: 25px 80px;
+    border-radius: 5px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
 /*///////////// 3.3 Support /////////////*/
+.support {
+    margin-left: 100px;
+    margin-right: 100px;
+}
 
+.image-callcenter {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.support > p > a {
+    color: #899CA0;
+    text-decoration: underline;
+}
+
+.support > p > a:hover {
+    text-decoration: none;
+}
+
+.contact-button {
+    border-radius: 50px;
+    background-color: #1C2B32;
+    border-color: #1C2B32;
+    border-style: solid;
+    width: 150px;
+    height: 50px;
+    margin-top: -20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    color: white;
+}
 
 
 /*///////////// 3.4 Faq /////////////*/
+.faq {
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 14px;
+    line-height: 3;
+    padding-bottom: 50px;
+}
 
+.faq:hover {
+    cursor: pointer;
+}
 
+details::details-content {
+    line-height: 1.5;
+    background: #899CA0;
+    color: white;
+}
+
+details[open]::details-content {
+    padding: 20px;
+    border-radius: 10px;
+}
 
 /*///////////// 3.5 Footer /////////////*/
+
+footer {
+    text-align: center;
+    background-color: #1C2B32;
+    padding-top: 15px;
+}
+
+footer > p {
+    color: white;
+}
